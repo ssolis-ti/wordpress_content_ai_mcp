@@ -90,9 +90,11 @@ El sistema incluye soporte de generación de imágenes destacadas para tus publi
 
 ## 🔌 Integración con Clientes MCP
 
-Añade el servidor a tu cliente de IA (como Claude Desktop o Cursor) editando su configuración:
+Añade el servidor a tu cliente de IA preferido. Recuerda reemplazar `/RUTA/ABSOLUTA/A/` con la ruta completa a la carpeta del proyecto en tu máquina.
 
-### Con Python Local:
+### A. Ejecución con Python Local
+
+#### 1. Claude Desktop o Cursor (mcpConfig.json)
 ```json
 {
   "mcpServers": {
@@ -104,11 +106,44 @@ Añade el servidor a tu cliente de IA (como Claude Desktop o Cursor) editando su
 }
 ```
 
-### Con Docker:
+#### 2. opencode (~/.config/opencode/opencode.jsonc)
+```jsonc
+{
+  "mcp": {
+    "wp_mcp_content_ai": {
+      "type": "local",
+      "command": ["python", "/RUTA/ABSOLUTA/A/wp_mcp_content_ai/bridge/mcp_server.py"],
+      "enabled": true
+    }
+  }
+}
+```
+
+#### 3. openclaw (openclaw.json)
+```json
+{
+  "mcp": {
+    "servers": {
+      "wp_mcp_content_ai": {
+        "command": "python",
+        "args": ["/RUTA/ABSOLUTA/A/wp_mcp_content_ai/bridge/mcp_server.py"]
+      }
+    }
+  }
+}
+```
+
+---
+
+### B. Ejecución con Docker (Opcional)
+
+Si utilizas la imagen construida de Docker, configura tu cliente para levantar el contenedor:
+
+#### Claude Desktop o Cursor (mcpConfig.json)
 ```json
 {
   "mcpServers": {
-    "wp_mcp_content_ai": {
+    "wp_mcp_content_ai_docker": {
       "command": "docker",
       "args": [
         "run",
