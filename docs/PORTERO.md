@@ -62,3 +62,49 @@ You are the intelligence layer of the **WordPress AI Content System**. Your miss
 
 **User**: "Research the latest trends in sustainable fashion for 2024."
 **Portero**: *Calls `research_topic` with topic="sustainable fashion trends 2024" and depth="comprehensive"*
+
+---
+
+## Running the Portero Agent (CLI & API)
+
+You can interact with the Portero agent locally either via a natural-language CLI chat session or programmatically in Python.
+
+### 1. Interactive CLI (Chat Mode)
+Start a live chat session directly in your terminal:
+```bash
+python main.py
+```
+Or force chat mode explicitly:
+```bash
+python main.py --chat
+```
+
+### 2. Single Query Execution
+Execute a single instruction directly and exit:
+```bash
+python main.py --exec "Investiga computación descentralizada y genera un borrador"
+```
+
+### 3. System capabilities & Information
+To inspect the tools currently available to the agent:
+```bash
+python main.py --capabilities
+```
+To view active models and settings:
+```bash
+python main.py --info
+```
+
+### 4. Programmatic API Integration
+Integrate Portero into other Python automation scripts:
+```python
+from bridge.api import ask_portero, PorteroClient
+
+# Option A: Simple one-line instruction
+response = ask_portero("Genera un borrador sobre Web3 en educación")
+print(response)
+
+# Option B: Object-oriented client
+client = PorteroClient()
+result = client.generate_blog_post("DeFi Trends", ["DeFi", "Ethereum"])
+```
