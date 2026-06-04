@@ -12,6 +12,7 @@ env/
 # Local data & state (preserve structure via .gitkeep)
 data/*.json
 !data/.gitkeep
+!data/categories.json
 
 # IDE configurations
 .vscode/
