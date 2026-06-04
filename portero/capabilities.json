@@ -1,0 +1,63 @@
+{
+  "app_name": "wp_ai_content",
+  "version": "0.1.0",
+  "capabilities": [
+    {
+      "name": "generate_blog_post",
+      "description": "Generate full blog posts or pages from a topic, keywords, or outline",
+      "parameters": [
+        {"name": "topic", "type": "string", "required": true},
+        {"name": "target_keywords", "type": "array", "required": false},
+        {"name": "word_count", "type": "integer", "required": false},
+        {"name": "tone", "type": "string", "required": false},
+        {"name": "target_audience", "type": "string", "required": false}
+      ],
+      "returns": "markdown content",
+      "examples": ["I need a blog post about AI in marketing", "Create a post for small business owners about SEO"]
+    },
+    {
+      "name": "seo_audit_and_optimize",
+      "description": "Perform comprehensive SEO analysis on existing or generated content",
+      "parameters": [
+        {"name": "content", "type": "string", "required": true},
+        {"name": "primary_keyword", "type": "string", "required": true},
+        {"name": "secondary_keywords", "type": "array", "required": false}
+      ],
+      "returns": "detailed SEO report",
+      "examples": ["Audit this text for 'best shoes'", "Optimize my article for SEO"]
+    },
+    {
+      "name": "research_topic",
+      "description": "Conduct in-depth research on a topic including competitors, trends, and key facts",
+      "parameters": [
+        {"name": "topic", "type": "string", "required": true},
+        {"name": "depth", "type": "string", "required": false}
+      ],
+      "returns": "research data",
+      "examples": ["Research the current state of DeFi", "What are the latest trend in cloud computing?"]
+    },
+    {
+      "name": "publish_to_wordpress",
+      "description": "Connect to WordPress instance and publish or update posts/pages",
+      "parameters": [
+        {"name": "content", "type": "object", "required": true},
+        {"name": "wp_url", "type": "string", "required": true},
+        {"name": "username", "type": "string", "required": true},
+        {"name": "app_password", "type": "string", "required": true},
+        {"name": "status", "type": "string", "required": false}
+      ],
+      "returns": "publication status",
+      "examples": ["Publish my article to WordPress", "Push this to my blog as a draft"]
+    },
+    {
+      "name": "generate_image_asset",
+      "description": "Generate high-quality image assets using fal.ai for posts and featured images",
+      "parameters": [
+        {"name": "prompt", "type": "string", "required": true},
+        {"name": "image_size", "type": "string", "required": false}
+      ],
+      "returns": "image URL and metadata",
+      "examples": ["Generate a featured image for a blog post about AI", "Create a 16:9 illustration of a robot doctor"]
+    }
+  ]
+}

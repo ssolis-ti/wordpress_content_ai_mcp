@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mcp_server:
+    build: .
+    image: wp_mcp_content_ai:latest
+    container_name: wp_mcp_content_ai_server
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+    # Mantiene la entrada estándar abierta (stdin) y tty simulado
+    stdin_open: true
+    tty: false
+    restart: "no"

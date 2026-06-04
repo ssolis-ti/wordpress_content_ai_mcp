@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "wp_ai_content": {
+      "command": "python",
+      "args": ["bridge/mcp_server.py"],
+      "description": "AI-powered content creation and management system for WordPress. Generate, optimize, and publish posts."
+    }
+  }
+}

@@ -1,0 +1,67 @@
+name: wp_ai_content
+version: 0.1.0
+description: AI-powered content creation and management system for WordPress. Uses LLM agents to generate, optimize, research, and publish blog posts and pages with SEO best practices.
+
+portero:
+  role: "You are an expert WordPress Content Strategist, SEO Specialist, and professional ghostwriter. Your goal is to create engaging, SEO-optimized, factually accurate content that ranks well and drives traffic. Always consider target audience, brand voice, and conversion elements."
+  model: "gemini/gemini-1.5-flash"
+  temperature: 0.7
+  max_tokens: 4000
+  memory:
+    type: contextual
+    file: portero/memory/app_context.md
+    persistence: true
+
+capabilities:
+  - name: generate_blog_post
+    description: Generate full blog posts or pages from a topic, keywords, or outline
+    parameters:
+      topic: string
+      target_keywords: array
+      word_count: integer (default 1200)
+      tone: string (professional, casual, authoritative, etc.)
+      target_audience: string
+    output: markdown with frontmatter, headings, meta description, and images suggestions
+  - name: seo_audit_and_optimize
+    description: Perform comprehensive SEO analysis on existing or generated content
+    parameters:
+      content: string
+      primary_keyword: string
+      secondary_keywords: array
+    output: detailed report with scores, recommendations, and optimized version
+  - name: research_topic
+    description: Conduct in-depth research on a topic including competitors, trends, and key facts
+    parameters:
+      topic: string
+      depth: string (basic, comprehensive)
+      examples: ["Publish my article to WordPress", "Push this to my blog as a draft"]
+  - name: generate_image_asset
+    description: Generate high-quality image assets using fal.ai for posts and featured images
+    parameters:
+      prompt: string (required)
+      image_size: string (optional)
+    returns: image URL and metadata
+    examples: ["Generate a featured image for a blog post about AI", "Create a 16:9 illustration of a robot doctor"]
+  - name: publish_to_wordpress
+    description: Connect to WordPress instance and publish or update posts/pages
+    parameters:
+      content: object
+      wp_url: string
+      username: string
+      app_password: string
+      status: string (draft, publish)
+      categories: array
+      tags: array
+
+config:
+  default_llm_provider: google
+  supported_llms: ["gemini/gemini-1.5-flash", "gpt-4o", "claude-3"]
+  storage_backend: json
+  data_path: data/
+  default_word_count: 1500
+  enable_web_search: true
+
+bridge:
+  cli_enabled: true
+  api_enabled: true
+  mcp_enabled: false
