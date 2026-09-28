@@ -1,0 +1,224 @@
+{
+  "app/__init__.py": {
+    "mtime": 1790621244.0159674,
+    "seen": 1790621925.126753,
+    "ast_hash": "401229ed43076a4319b34c2f38cd0a23",
+    "semantic_hash": ""
+  },
+  "app/core.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.1267564,
+    "ast_hash": "66a148a2edc56098eceb0018ba42d758",
+    "semantic_hash": ""
+  },
+  "app/generator.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.1267586,
+    "ast_hash": "8fe8e3a0dddc4e86fc975c5f00a0613b",
+    "semantic_hash": ""
+  },
+  "app/image.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.12676,
+    "ast_hash": "708f226e57c1fd2c24d6c599663d498c",
+    "semantic_hash": ""
+  },
+  "app/llm.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.1267612,
+    "ast_hash": "26df2dfe4ae7e839a26f0cf827f2a3bf",
+    "semantic_hash": ""
+  },
+  "app/models.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.1267624,
+    "ast_hash": "45a0e58acfba83ac18f3c2a743503b4d",
+    "semantic_hash": ""
+  },
+  "app/publisher.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.1267638,
+    "ast_hash": "0e04e62eb0a01ae52b78af022e7aa816",
+    "semantic_hash": ""
+  },
+  "app/research.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.1267734,
+    "ast_hash": "31b5b0bf6281e8b7809ab6d2ba01ed64",
+    "semantic_hash": ""
+  },
+  "app/seo.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.1267755,
+    "ast_hash": "c0d7b9ff376e66127fe581d0602085d4",
+    "semantic_hash": ""
+  },
+  "app/storage.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.1267765,
+    "ast_hash": "349a4f83c27a833578fe2a3962bbffaf",
+    "semantic_hash": ""
+  },
+  "bridge/__init__.py": {
+    "mtime": 1790621244.0203085,
+    "seen": 1790621925.1267774,
+    "ast_hash": "341d6aadf70be29e6e6ea04eab5b1a9d",
+    "semantic_hash": ""
+  },
+  "bridge/api.py": {
+    "mtime": 1790621244.0216477,
+    "seen": 1790621925.1267786,
+    "ast_hash": "76fdbc0f6c48a14b4cde3aa01783335f",
+    "semantic_hash": ""
+  },
+  "bridge/cli.py": {
+    "mtime": 1790621244.0216477,
+    "seen": 1790621925.1267796,
+    "ast_hash": "b563f5248d427d9815078f2e4f814652",
+    "semantic_hash": ""
+  },
+  "bridge/mcp_server.py": {
+    "mtime": 1790621244.0216477,
+    "seen": 1790621925.1267807,
+    "ast_hash": "16bcea943ec9c888603f818c1bbfcea2",
+    "semantic_hash": ""
+  },
+  "data/categories.json": {
+    "mtime": 1790621244.0222514,
+    "seen": 1790621925.1267815,
+    "ast_hash": "60527055e9e608dd0ee076543217df1f",
+    "semantic_hash": ""
+  },
+  "example_publish.py": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.1267824,
+    "ast_hash": "eefe2b2c3318e1e3b6b85bb845a7a85f",
+    "semantic_hash": ""
+  },
+  "main.py": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.1267831,
+    "ast_hash": "1a65b3c904935b3263ba6e4b60cb8142",
+    "semantic_hash": ""
+  },
+  "mcp_config.json": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.126784,
+    "ast_hash": "9d41ca87eef99913b6c0227b6349d96a",
+    "semantic_hash": ""
+  },
+  "portero/__init__.py": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.1267848,
+    "ast_hash": "ac753dabd3eb1027cc813b752a886239",
+    "semantic_hash": ""
+  },
+  "portero/agent.py": {
+    "mtime": 1790621244.02366,
+    "seen": 1790621925.1267855,
+    "ast_hash": "e3d1ba9e90630d893ca79da37355683c",
+    "semantic_hash": ""
+  },
+  "portero/capabilities.json": {
+    "mtime": 1790621244.02366,
+    "seen": 1790621925.1267862,
+    "ast_hash": "d6468181c3b0d7b58767e27d3e02b2a9",
+    "semantic_hash": ""
+  },
+  "portero/tools.py": {
+    "mtime": 1790621244.02366,
+    "seen": 1790621925.1267872,
+    "ast_hash": "865a85999c2c539282c4c5dfef9917f5",
+    "semantic_hash": ""
+  },
+  "tests/test_core.py": {
+    "mtime": 1790621244.02366,
+    "seen": 1790621925.1267884,
+    "ast_hash": "c186e1b7a7299e599535f8b85ebb0e19",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1790621244.0159674,
+    "seen": 1790621925.126789,
+    "ast_hash": "44dd2116e26bd8e9aa801a05c516d85c",
+    "semantic_hash": ""
+  },
+  "SKILL.md": {
+    "mtime": 1790621244.0159674,
+    "seen": 1790621925.1267898,
+    "ast_hash": "a599b868562b402299e9bb9bf1dc8a20",
+    "semantic_hash": ""
+  },
+  "docker-compose.yml": {
+    "mtime": 1790621244.0222514,
+    "seen": 1790621925.1267908,
+    "ast_hash": "a9a2486944027d90fb90d0550440a4bf",
+    "semantic_hash": ""
+  },
+  "docs/PORTERO.md": {
+    "mtime": 1790621244.0222514,
+    "seen": 1790621925.1267917,
+    "ast_hash": "ad7bddf9afd19595f58834420c7eb822",
+    "semantic_hash": ""
+  },
+  "docs/architecture.md": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.1267927,
+    "ast_hash": "99ab32de07b570836cac59eef4d8bcd1",
+    "semantic_hash": ""
+  },
+  "docs/configuration.md": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.1267936,
+    "ast_hash": "524354f065f1ed5f92897c7b40930965",
+    "semantic_hash": ""
+  },
+  "docs/getting-started.md": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.1267946,
+    "ast_hash": "f733d6d054102e49da6b76e00d8f6227",
+    "semantic_hash": ""
+  },
+  "docs/index.md": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.1267953,
+    "ast_hash": "df20f4704f5530fa300b508292fc2dfa",
+    "semantic_hash": ""
+  },
+  "docs/mcp-tools.md": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.126796,
+    "ast_hash": "bef837737e8b2d4d2360a728d20b1faf",
+    "semantic_hash": ""
+  },
+  "docs/verification-qa.md": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.126797,
+    "ast_hash": "8f3d3389166641edd5d15a99ceff9bd6",
+    "semantic_hash": ""
+  },
+  "manifest.yaml": {
+    "mtime": 1790621244.0224552,
+    "seen": 1790621925.1267982,
+    "ast_hash": "d810934eb793d09a0f7d666f780a464f",
+    "semantic_hash": ""
+  },
+  "portero/memory/app_context.md": {
+    "mtime": 1790621244.02366,
+    "seen": 1790621925.1267989,
+    "ast_hash": "4fce5895299287b4c35af42a572d3e41",
+    "semantic_hash": ""
+  },
+  "portero/system_prompt.md": {
+    "mtime": 1790621244.02366,
+    "seen": 1790621925.126805,
+    "ast_hash": "5af9136e5d755d8133d5ca51a429aac5",
+    "semantic_hash": ""
+  },
+  "requirements.txt": {
+    "mtime": 1790621244.02366,
+    "seen": 1790621925.1268067,
+    "ast_hash": "91ad84546b212cdb427ef1d28ade62c1",
+    "semantic_hash": ""
+  }
+}

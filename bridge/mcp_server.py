@@ -13,7 +13,11 @@ import json
 import logging
 import sys
 import os
+from pathlib import Path
 from dotenv import load_dotenv
+
+# Allow running as `python bridge/mcp_server.py` from any directory
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 # Load .env FIRST — before any app imports that might need API keys
 load_dotenv()

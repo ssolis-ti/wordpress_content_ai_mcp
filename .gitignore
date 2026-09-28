@@ -30,3 +30,4 @@ logs/
 .mypy_cache/
 .DS_Store
 Thumbs.db
+graphify-out/cache/
